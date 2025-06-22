@@ -1,19 +1,48 @@
-A simple yet stylish To-Do List web application built using Python, Flask, Jinja2, and vanilla CSS. This app helps users quickly add and delete tasks — perfect for organizing daily coding goals or tracking project steps.
+### Flask To-Do List App
 
-🔧 Tech Stack
-	•	Backend: Python + Flask
-	•	Templating: Jinja2
-	•	Frontend: HTML + pure CSS (no frameworks)
-	•	Storage: In-memory list (non-persistent)
+A simple web-based To-Do List app built using Flask (Python web framework). It allows users to add and delete tasks dynamically, all stored in memory
 
-✅ Features
-	•	Add new tasks
-	•	Delete existing tasks
-	•	Styled with a dark, coder-themed UI
-	•	Clean and minimal user experience
-	•	No external dependencies or APIs used
+Features
+	•	Add new tasks<br>
+	•	Delete tasks<br>
+	•	Live update without reloading the server<br>
+	•	In-memory data (no database, ideal for learning Flask basics)<br>
 
-💡 Ideal For
-	•	Beginners learning Flask
-	•	Practicing full-stack flow with Python
-	•	Mini productivity tool for daily task tracking
+## Project Structure
+<pre>
+	todo_list/
+│
+├── templates/
+│   └── todo_flask_templates.html   # Main HTML template
+│
+├── app.py                          # Flask application code
+└── README.md
+</pre>
+
+## Requirements
+
+Make sure you have Python 3 and Flask installed.
+
+You can install Flask using:
+<pre>
+	pip install flask
+</pre>
+
+How to Run
+<pre>python app.py</pre>
+
+Then open your browser and visit Local Host visible on your terminal
+
+How It Works
+	•	The homepage (/) displays a form and a list of tasks<br>
+	•	When a task is submitted, it’s added to the in-memory tasks list<br>
+	•	Clicking “Delete” removes a task by its index<br>
+	•	All changes reflect immediately without restarting the app<br>
+
+Notes
+	•	This app doesn’t use a database. Tasks are stored temporarily in a Python list and will reset when the server restarts<br>
+	•	Perfect for learning Flask routing, HTML templating, and basic form handling<br>
+
+## License
+
+This project is free to use and modify. No license required.
